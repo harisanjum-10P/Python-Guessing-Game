@@ -12,20 +12,23 @@ welcomeText=['\n\n--------------------Guessing game--------------------\n\n',
 
 class TestGuessingGame(unittest.TestCase):
 
+    '''Test case to ensure proper working of calculate score funcion'''
     def test_calcScore(self):
         self.assertEqual(calcScore(0, 8), 10.0)
         self.assertEqual(calcScore(8, 8), 0.0)
         self.assertEqual(calcScore(2, 4), 5)
 
+    '''Test case to ensure proper working of hint funcion'''
     def test_hint(self):
         hints=["The number is more than 5","The number is even"]
         self.assertIn(hint('Y',6,10),hints)
   
 
-# This class is used for user defined exception so the user only inputs (y,n) as a choice
+'''This class is used for user defined exception so the user only inputs (y,n) as a choice'''
 class err(Exception):
     pass
 
+'''Used to display the welcome text in center alignment'''
 for i in range(len(welcomeText)):
     print(welcomeText[i].center(len(welcomeText[0])-4))
 
@@ -50,6 +53,7 @@ def calcScore(score,numberOfGuesses):
     return round(calculatedScore,1)
 
 
+'''Main loop'''
 while(gameChoice.upper() == "Y"):
     
     numberOfGuesses = 8
@@ -61,6 +65,7 @@ while(gameChoice.upper() == "Y"):
         except ValueError: 
             print("Enter numbers only")
 
+    '''This condition reduces the number of guesses based on the upper bound'''
     if upperLimit < numberOfGuesses:
         numberOfGuesses=math.ceil(upperLimit/2)
 
