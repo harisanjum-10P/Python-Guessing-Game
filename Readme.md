@@ -9,6 +9,6 @@ How to run:
 This is a python based game.
 1) Download or clone the repository. 
 2) Open guessing_game.py in any code editor (eg. VScode, atom). Alternatively you can open the code in any online python interprete (eg. Programiz Python Interpreter).
-3) Run the code and the game will start on the terminal.
+3) Run the code by typing "python guessing_game.py" in the terminal and the game will start.
 
 Good Luck!
