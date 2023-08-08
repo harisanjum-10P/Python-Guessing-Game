@@ -5,4 +5,10 @@ The upper bound will be selected by the user.
 The user will have a maximum of 8 tries to guess the number.
 After 4 tries, a hint will be provided.
 
+How to run:
+This is a python based game.
+1) Download or clone the repository. 
+2) Open guessing_game.py in any code editor (eg. VScode, atom). Alternatively you can open the code in any online python interprete (eg. Programiz Python Interpreter).
+3) Run the code and the game will start on the terminal.
+
 Good Luck!
